@@ -434,9 +434,6 @@ body{
     justify-content: center;
     width: 80%;
 }
-.grid-right-column-header {
-    /* width: 100%; */
-}
 .grid-text-content {
     padding: 1rem;
 }
@@ -756,4 +753,27 @@ input[type=submit]:active {
 }
 .contact-text a {
     color: var(--color-primary);
+}
+
+.msg-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2rem;
+}
+.footer a{
+    color: var(--color-primary);
+    font-weight: 200;
+    font-size: .9rem;
+}
+
+.footer a:hover{
+     color: var(--color-secondary);
 }

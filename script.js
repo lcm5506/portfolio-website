@@ -1,33 +1,10 @@
-let typingSound = $("#typing-sound")[0];
+import typingAnimation from "./typingAnimiation.js";
+// let typingSound = $("#typing-sound")[0];
 
-let typingAnimationContainer = document.querySelector(".typing-animation");
-let content = "Welcome to my Playground.";
-let contentLong =
-  "Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. Hello My name is Charlie. ";
+let welcomeContainer = document.querySelector("#welcome-text");
+let welcomeMsg = "Welcome to my Playground.";
 
-function typingAnimation(content, container) {
-  let i = 0;
-  addTypingChars = (chars, typingContainer) => {
-    if (i === 0) typingSound.play();
-    if (i === chars.length - 1) {
-      console.log("pause");
-      typingSound.pause();
-    }
-    if (i < chars.length) {
-      typingContainer.innerHTML += chars[i];
-      i++;
-      setTimeout(
-        addTypingChars,
-        Math.random() * 200 + 30,
-        chars,
-        typingContainer
-      );
-    }
-  };
-  setTimeout(addTypingChars, 1500, content, container);
-}
-typingAnimation(content, typingAnimationContainer);
-
+typingAnimation(welcomeMsg, welcomeContainer);
 let navBtns = document.querySelectorAll(".nav-btn");
 navBtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
@@ -160,22 +137,3 @@ projectModal.addEventListener("click", (e) => {
     projectModal.close();
   }
 });
-
-// Email Form Functionality
-// const emailForm = document.querySelector('#email-form');
-// const emailName = document.querySelector('#email-name');
-// const emailAddress = document.querySelector('#email-address');
-// const emailTitle = document.querySelector('#email-title');
-// const emailContent = document.querySelector('#email-content');
-// emailForm.addEventListener('submit', e => {
-//     e.preventDefault();
-//     Email.send({
-//         SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-//         To : 'lcm5506@gmail.com',
-//         From : emailAddress.value,
-//         Subject : emailTitle,
-//         Body : emailContent
-//     }).then(
-//       message => alert(message)
-//     );
-// })

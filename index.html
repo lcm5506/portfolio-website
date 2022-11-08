@@ -173,14 +173,14 @@
               >, web-developer in Edmonton, Canada.
             </h2>
             <br />
-            <h3 class="typing-animation header-3"></h3>
+            <h3 class="typing-animation header-3" id="welcome-text"></h3>
             <br />
             <a
               href="./extras/Chang-Mog-Lee-Resume.pdf"
               class="sliding-btn-container"
               download
             >
-              <span class="sliding-btn-text">Download CVS</span>
+              <span class="sliding-btn-text">Download Resume</span>
               <i class="fa-solid fa-download sliding-btn-icon"></i>
               <div class="hover-fill-bar"></div>
             </a>
@@ -644,12 +644,18 @@
               placeholder="Message"
               required
             ></textarea>
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/thanks.html"
+            />
             <input type="submit" value="Send" />
           </form>
         </div>
       </div>
       <script src="https://smtpjs.com/v3/smtp.js"></script>
     </div>
-    <script defer src="script.js"></script>
+    <!-- <script defer src="typingAnimation.js"></script> -->
+    <script defer src="script.js" type="module"></script>
   </body>
 </html>
