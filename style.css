@@ -447,7 +447,13 @@ body{
     padding: 0 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 1rem;
+}
+.hidden-placeholder{
+    visibility: hidden !important;
+}
+.margin-top-5{
+    margin-top: 5rem;
 }
 .card{
     border: 2px solid var(--color-gray-4);
@@ -645,13 +651,10 @@ ul {
 }
 
 .modal-link,
-.modal-link:visited,
-a,
-a:visited {
+.modal-link:visited {
     color: var(--color-primary);
 }
-.modal-link:hover,
-a:hover {
+.modal-link:hover {
     color: var(--color-secondary);
 }
 
@@ -750,4 +753,7 @@ input[type=submit]:active {
 .contact-entry:hover .contact-text,
 .contact-entry:hover .contact-text a {
     color: var(--color-secondary);
+}
+.contact-text a {
+    color: var(--color-primary);
 }
