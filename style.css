@@ -9,6 +9,8 @@
     --color-secondary: rgb(61, 206, 109);
     --color-bg-primary: rgb(20, 25, 41);
     --color-bg-secondary: rgb(42, 161, 82);
+    --color-bg-secondary-darker: rgb(28, 107, 54);
+    --color-bg-secondary-darker2: rgba(42, 161, 82, 0.548);
     --color-bg-tertiary: rgb(5, 28, 54);
     --color-black: rgb(10, 10, 10, 1);
     --color-white: rgb(230, 230, 230, 1);
@@ -643,10 +645,13 @@ ul {
 }
 
 .modal-link,
-.modal-link:visited {
+.modal-link:visited,
+a,
+a:visited {
     color: var(--color-primary);
 }
-.modal-link:hover {
+.modal-link:hover,
+a:hover {
     color: var(--color-secondary);
 }
 
@@ -656,4 +661,93 @@ ul {
 }
 .modal-link i {
     margin-right: 0.5rem;
+}
+
+/* Email Send Form */
+#email-form {
+    display: grid;
+    /* flex-direction: column; */
+    gap: 10px;
+    /* flex-flow: column; */
+    grid-auto-flow: row;
+    /* width: 80%; */
+    margin: 0 auto;
+    /* padding: 2rem 4rem; */
+    padding: 0 4rem;
+}
+input,
+textarea {
+    outline: none;
+    font-family: 'Secular One', sans-serif;
+    border: 2px solid var(--color-gray-5);
+    color: var(--color-primary);
+    border-radius: 10px;
+    background-color: var(--color-gray-2);
+    font-size: 1.1rem;
+}
+input[type=text],
+input[type=email],
+textarea {
+    padding: .3rem 1rem;
+}
+textarea {
+    resize: none;
+}
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+textarea::placeholder {
+    color: var(--color-primary);
+    opacity: 0.7;
+}
+input:focus,
+textarea:focus {
+    border: 2px solid var(--color-secondary) !important;
+    /* background-color: var(--color-bg-secondary-darker); */
+    background-color: var(--color-gray-1)
+}
+input:hover,
+textarea:hover{ 
+    border: 2px solid var(--color-primary);
+}
+input[type=submit] {
+    /* font-size: 2rem; */
+    width: fit-content;
+    padding: 0.4rem 1rem;
+}
+input[type=submit]:active {
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-bg-secondary);
+}
+
+
+/* Styling for contact section */
+.contact-body {
+    display: flex;
+}
+.flex-left-container{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+.flex-right-container{
+    flex: 3;
+    padding: 0 1rem;
+}
+.contact-icon i{
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    object-fit: contain;
+    overflow: hidden;
+}
+.contact-entry{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 3rem;
+}
+.contact-entry:hover .contact-text,
+.contact-entry:hover .contact-text a {
+    color: var(--color-secondary);
 }
