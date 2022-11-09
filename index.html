@@ -36,7 +36,11 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="" alt="Screenshot of the project" class="modal-img" />
+          <img
+            src="./images/Java_Maze_Generator.png"
+            alt="Screenshot of the project"
+            class="modal-img"
+          />
         </a>
         <div class="modal-text-content text-content"></div>
         <div class="modal-link-container"></div>
@@ -62,9 +66,7 @@
       <div class="background-shape-1"></div>
       <div class="background-shape-2"></div>
       <div class="grid-1-2-columns">
-        <div
-          class="grid-left-column grid-split-column circular-layout home-left"
-        >
+        <div class="grid-split-column circular-layout">
           <img
             src="./images/man-working-with-computer-by-Lovepik.png"
             alt="Man in front of a computer"
@@ -135,37 +137,34 @@
           </div>
         </div>
         <div class="grid-right-column grid-split-column">
-          <div class="grid-right-column-content">
-            <h2 class="header-2">
-              Hi! My name is
-              <span class="secondary-color text-color-emphasis"
-                >Charles Lee</span
-              >, web-developer in Edmonton, Canada.
-            </h2>
-            <br />
-            <h3 class="typing-animation header-3" id="welcome-text"></h3>
-            <br />
-            <a
-              href="./extras/Chang-Mog-Lee-Resume.pdf"
-              class="sliding-btn-container"
-              download
-            >
-              <span class="sliding-btn-text">Download Resume</span>
-              <i class="fa-solid fa-download sliding-btn-icon"></i>
-              <div class="hover-fill-bar"></div>
-            </a>
-          </div>
+          <h2 class="header-2">
+            Hi! My name is
+            <span class="secondary-color text-color-emphasis">Charles Lee</span
+            >, web-developer in Edmonton, Canada.
+          </h2>
+          <br />
+          <h3 class="typing-animation header-3" id="welcome-text"></h3>
+          <br />
+          <a
+            href="./extras/Chang-Mog-Lee-Resume.pdf"
+            class="sliding-btn-container"
+            download
+          >
+            <span class="sliding-btn-text">Download Resume</span>
+            <i class="fa-solid fa-download sliding-btn-icon"></i>
+            <div class="hover-fill-bar"></div>
+          </a>
         </div>
       </div>
     </div>
-    <div class="section section-about horz-margin-7" data-section="about">
+    <div class="section section-about" data-section="about">
       <div class="section-title">
         <h1 class="section-title-header header-1">
           About <span class="text-color-emphasis">Me</span>
         </h1>
       </div>
       <div class="section-body body-container">
-        <div class="subsection-container">
+        <div class="subsection">
           <div class="subsection-content">
             <div class="grid-2-columns">
               <div class="grid-left-column grid-split-column">
@@ -193,22 +192,6 @@
                       Javascript.
                     </p>
                   </div>
-                  <!-- <div class="card card-sm hidden-placeholder">
-                <h3 class="card-header header-4">+15 Projects</h3>
-                <br />
-                <p class="card-body text-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat, quam?
-                </p>
-              </div>
-              <div class="card card-sm hidden-placeholder">
-                <h3 class="card-header header-4">+15 Projects</h3>
-                <br />
-                <p class="card-body text-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat, quam?
-                </p>
-              </div> -->
                   <div class="card card-sm margin-top-5">
                     <h3 class="card-header header-4">Management Experience</h3>
                     <br />
@@ -221,9 +204,9 @@
             </div>
           </div>
         </div>
-        <div class="subsection-container">
+        <div class="subsection">
           <div class="subsection-header header-2">Skills</div>
-          <div class="skills-container subsection-content">
+          <div class="skills-container subsection-conten grid-2-columns">
             <div class="skill">
               <h4 class="skill-header header-4">HTML</h4>
 
@@ -270,7 +253,7 @@
             </div>
           </div>
         </div>
-        <div class="subsection-container">
+        <div class="subsection">
           <div class="subsection-header header-2">
             Java Skills and Tools in my Arsenal
           </div>
@@ -295,7 +278,7 @@
             <br />
           </div>
         </div>
-        <div class="subsection-container">
+        <div class="subsection">
           <div class="subsection-header header-2">
             Web-Development Skills and Tools
           </div>
@@ -320,7 +303,7 @@
             <br />
           </div>
         </div>
-        <div class="subsection-container">
+        <div class="subsection">
           <div class="subsection-header header-2">Timeline</div>
           <div class="subsection-content grid-2-columns timeline-container">
             <div class="timeline">
@@ -424,7 +407,7 @@
         </div>
       </div>
     </div>
-    <div class="section section-project horz-margin-7" data-section="project">
+    <div class="section section-project" data-section="project">
       <div class="section-title">
         <h1 class="section-title-header header-1">Projects</h1>
       </div>
@@ -636,101 +619,103 @@
         </div>
       </div>
     </div>
-    <div class="section section-contact horz-margin-7" data-section="contact">
+    <div class="section section-contact" data-section="contact">
       <div class="section-title">
         <h1 class="section-title-header header-1">Contact</h1>
       </div>
-      <div class="section-body body-container contact-body">
-        <div class="flex-left-container text-content">
-          <div class="contact-entry">
-            <div class="contact-icon">
-              <i class="fa-solid fa-address-card"></i>
-              <span>Name:</span>
+      <div class="section-body body-container">
+        <div class="grid-2-columns">
+          <div class="grid-split-column contact-column text-content">
+            <div class="contact-entry">
+              <div class="contact-icon">
+                <i class="fa-solid fa-address-card"></i>
+                <span>Name:</span>
+              </div>
+              <div class="contact-text">
+                <span>Chang-Mog (Charles) Lee</span>
+              </div>
             </div>
-            <div class="contact-text">
-              <span>Chang-Mog (Charles) Lee</span>
+            <div class="contact-entry">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Location:</span>
+              </div>
+              <div class="contact-text">
+                <span>Edmonton, Alberta</span>
+              </div>
+            </div>
+            <div class="contact-entry">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i> <span>Email:</span>
+              </div>
+              <div class="contact-text">
+                <span>contact@charleeportfolio.com</span>
+              </div>
+            </div>
+            <div class="contact-entry">
+              <div class="contact-icon">
+                <i class="fa-solid fa-earth-americas"></i><span>Language:</span>
+              </div>
+              <div class="contact-text">
+                <span>English, Korean</span>
+              </div>
+            </div>
+            <div class="contact-entry">
+              <div class="contact-icon">
+                <i class="fa-brands fa-github"></i><span>Github:</span>
+              </div>
+              <div class="contact-text">
+                <span>
+                  <a href="https://github.com/lcm5506?tab=repositories"
+                    >lcm5506</a
+                  >
+                </span>
+              </div>
             </div>
           </div>
-          <div class="contact-entry">
-            <div class="contact-icon">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>Location:</span>
-            </div>
-            <div class="contact-text">
-              <span>Edmonton, Alberta</span>
-            </div>
+          <div class="grid-split-column contact-column">
+            <form
+              id="email-form"
+              action="https://formsubmit.co/contact@charleeportfolio.com"
+              method="POST"
+            >
+              <input
+                type="text"
+                name="name"
+                id="email-name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email-address"
+                placeholder="Email Address"
+                required
+              />
+              <input
+                type="text"
+                name="title"
+                id="email-title"
+                placeholder="Title"
+                required
+              />
+              <textarea
+                name="content"
+                id="email-content"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+                required
+              ></textarea>
+              <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5500/thanks.html"
+              />
+              <input type="submit" value="Send" />
+            </form>
           </div>
-          <div class="contact-entry">
-            <div class="contact-icon">
-              <i class="fa-solid fa-envelope"></i> <span>Email:</span>
-            </div>
-            <div class="contact-text">
-              <span>contact@charleeportfolio.com</span>
-            </div>
-          </div>
-          <div class="contact-entry">
-            <div class="contact-icon">
-              <i class="fa-solid fa-earth-americas"></i><span>Language:</span>
-            </div>
-            <div class="contact-text">
-              <span>English, Korean</span>
-            </div>
-          </div>
-          <div class="contact-entry">
-            <div class="contact-icon">
-              <i class="fa-brands fa-github"></i><span>Github:</span>
-            </div>
-            <div class="contact-text">
-              <span>
-                <a href="https://github.com/lcm5506?tab=repositories"
-                  >lcm5506</a
-                >
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="flex-right-container">
-          <form
-            id="email-form"
-            action="https://formsubmit.co/contact@charleeportfolio.com"
-            method="POST"
-          >
-            <input
-              type="text"
-              name="name"
-              id="email-name"
-              placeholder="Name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              id="email-address"
-              placeholder="Email Address"
-              required
-            />
-            <input
-              type="text"
-              name="title"
-              id="email-title"
-              placeholder="Title"
-              required
-            />
-            <textarea
-              name="content"
-              id="email-content"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-              required
-            ></textarea>
-            <input
-              type="hidden"
-              name="_next"
-              value="http://127.0.0.1:5500/thanks.html"
-            />
-            <input type="submit" value="Send" />
-          </form>
         </div>
       </div>
       <script src="https://smtpjs.com/v3/smtp.js"></script>

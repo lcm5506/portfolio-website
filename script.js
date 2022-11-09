@@ -8,6 +8,7 @@ typingAnimation(welcomeMsg, welcomeContainer);
 let navBtns = document.querySelectorAll(".nav-btn");
 navBtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
+    console.log("btn clicked");
     $(".section.active").removeClass("active");
     $(`.section[data-section="${btn.dataset.section}"]`).addClass("active");
     $(`.nav-btn.active-btn`).removeClass("active-btn");
