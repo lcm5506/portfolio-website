@@ -118,13 +118,13 @@ body{
 
 .section-body{
     margin-top: 4rem;
-    margin-bottom: 5rem;
+    padding-bottom: 8rem;
 }
 
 .grid-2-columns{
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    height: 100%;
+    /* height: 100%; */
 }
 .grid-1-2-columns{
     display: grid;
@@ -311,6 +311,7 @@ body{
     color: var(--color-secondary);
     text-shadow: 3px 3px var(--color-secondary-shadow);
 }
+
 .vertical-nav-bar{
     display: grid;
     color: var(--color-white);
@@ -501,7 +502,6 @@ body{
 .abridged-text.reveal-abridged{
     display: inline;
 }
-
 .subsection-header {
     text-shadow: 5px 5px 1px var(--color-tertiary-shadow);
     display: block;
@@ -588,6 +588,98 @@ body{
 .SDJS_embed_18646:hover .SDJS_fade,
 .SDJS_embed_94752:hover .SDJS_fade{
     opacity: 0 !important;
+}
+
+/* Timeline Subsection*/
+.timeline-container{
+    gap: 5rem;
+}
+.timeline{
+    padding: 0 2rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.timeline *{
+    transition: all .8s ease-out;
+}
+.timeline-icon{
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    top: -10px;
+    left: -30px;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-bg-secondary);
+    box-shadow: 5px 5px 10px var(--color-shadow);
+}
+.timeline:hover .timeline-icon{
+    transform: translateY(-5px) scale(110%);
+    box-shadow: 10px 10px 15px var(--color-shadow);
+}
+.timeline:hover .timeline-company,
+.timeline:hover .timeline-year,
+.timeline:hover .timeline-content{
+    transform: translateY(-3px);
+    text-shadow: 3px 3px 5px var(--color-shadow);
+}
+
+.timeline-title {
+    color: var(--color-secondary);
+}
+.timeline-company > span{
+    /* color: var(--color-primary); */
+    opacity: 0.8;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+@keyframes bouncing {
+    0% {
+        transform: translateY(-20px);
+        animation-timing-function: ease-in-out;
+    }
+    45%{
+        transform: translateY(9px) scale(100%);
+        animation-timing-function: ease-out;
+    }
+    50%{
+        transform: translateY(10px) scale(110%, 90%);
+        animation-timing-function: ease-out;
+    }
+    55%{
+        transform:translateY(9px) scale(100%);
+        animation-timing-function: ease-out;
+    }
+    100%{
+        transform: translateY(-20px);
+        animation-timing-function: ease-in-out;
+    }
+/*     
+    0% {
+        transform: translateY(10px) scale(105%, 90%);
+        animation-timing-function: ease-out;
+    }
+    5% {
+        transform: translateY(9px);
+        animation-timing-function: ease-in-out;
+    }
+    50% {
+        transform: translateY(-10px);
+        animation-timing-function: ease-out;
+    }
+    95%{
+        transform: translateY(9px);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        transform: translateY(10px) scale(105%, 90%);
+        animation-timing-function: ease-out;
+    } */
 }
 
 /* Style the modal dialog boxes */
